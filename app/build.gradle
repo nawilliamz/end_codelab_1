@@ -91,7 +91,8 @@ dependencies {
     // Once https://issuetracker.google.com/128612536 is fixed this can be fixed.
 
     //The FragmentScenario API is part of this androidX.fragment fragment-testing library
-    debugImplementation "androidx.fragment:fragment-testing:$fragmentVersion"
+    //noinspection FragmentGradleConfiguration
+    implementation "androidx.fragment:fragment-testing:$fragmentVersion"
     //This core libray contains the Android JUnit 4Runner code
     implementation "androidx.test:core:$androidXTestCoreVersion"
 }
